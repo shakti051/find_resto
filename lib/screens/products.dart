@@ -22,7 +22,7 @@ class _ProductsState extends State<Products> {
         prodInfo = true;
       });
       for (int i = 0; i < productArray; i++) {
-//        print(">>>>>>>>>>>>>>" + productSearch.response.products[i].name);
+        print("The products are: " + productSearch.response.products[i].name);
         listOf.add(productSearch.response.products[i].name);
       }
       print("Total no of product " + productArray.toString());
