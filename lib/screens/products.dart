@@ -22,7 +22,7 @@ class _ProductsState extends State<Products> {
         prodInfo = true;
       });
       for (int i = 0; i < productArray; i++) {
-        print(">>>>>>>>>>>>>>" + productSearch.response.products[i].name);
+//        print(">>>>>>>>>>>>>>" + productSearch.response.products[i].name);
         listOf.add(productSearch.response.products[i].name);
       }
       print("Total no of product " + productArray.toString());
@@ -80,17 +80,15 @@ class listDataItems extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(7),
         padding: EdgeInsets.all(6),
-        child: Row(children: <Widget>[
-          CircleAvatar(
-            child: Text("1"),
-            backgroundColor: Colors.deepPurple,
-            foregroundColor: Colors.white,
-          ),
+        child: Column(children: <Widget>[
+          Image.asset("assets/images/honey_pic.png"),
           Padding(padding: EdgeInsets.all(8)),
-          Text(
-            itemName,
-            style: TextStyle(fontSize: 20),
-          )
+          Row(children: [
+            Text(
+              itemName,
+              style: TextStyle(fontSize: 20),
+            )
+          ])
         ]),
       ),
     );
