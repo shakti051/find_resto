@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
       child: Container(
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Flutter Tabs Demo'),
+            title: Text('Search For Honey'),
             bottom: TabBar(
               tabs: [Tab(text: "Products"), Tab(text: "Stores")],
             ),
