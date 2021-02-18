@@ -15,8 +15,9 @@ class _ProductsState extends State<Products> {
   _getProduct() async {
     return await api.getProducts().then((value) {
       productSearch = value;
-  //    print(">>>>>>>>>>>>>>" + productSearch.response.products);
-      
+      int productArray = productSearch.response.products.length;
+      for (int i = 0; i < productArray; i++)
+        print(">>>>>>>>>>>>>>" + productSearch.response.products[i].name);
     });
   }
 
